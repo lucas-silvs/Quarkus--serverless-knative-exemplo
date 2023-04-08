@@ -20,6 +20,15 @@ dependencies {
 
     //Funqy - Serverless
     implementation 'io.quarkus:quarkus-funqy-http'
+
+    // JDBC driver dependencies
+    implementation("io.quarkus:quarkus-jdbc-mysql")
+
+    // Hibernate ORM specific dependencies
+    implementation("io.quarkus:quarkus-hibernate-orm-panache")
+
+    //utilizar yaml for application config
+    implementation("io.quarkus:quarkus-config-yaml")
 }
 
 group 'com.lucassilvs'

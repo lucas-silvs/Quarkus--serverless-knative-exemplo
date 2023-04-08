@@ -1,4 +1,4 @@
-package com.lucassilvs.serverless.exemplo;
+package com.lucassilvs.serverless.exemplo.service;
 
 import io.quarkus.funqy.Funq;
 

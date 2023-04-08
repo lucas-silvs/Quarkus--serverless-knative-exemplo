@@ -1,0 +1,16 @@
+quarkus:
+  http:
+    port: 5000
+
+  datasource:
+    db-kind: mysql
+    username: wb-usuarios
+    password: quarkusdb
+    jdbc:
+      url: "jdbc:mysql://127.0.0.1:3303/db_quarkus"
+    devservices:
+      enabled: false
+
+  hibernate-orm:
+    database:
+      generation: update
