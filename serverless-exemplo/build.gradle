@@ -16,13 +16,19 @@ dependencies {
     implementation 'io.quarkus:quarkus-arc'
     testImplementation 'io.quarkus:quarkus-junit5'
     testImplementation 'io.rest-assured:rest-assured'
+    testImplementation("io.quarkus:quarkus-test-h2")
 
 
     //Funqy - Serverless
     implementation 'io.quarkus:quarkus-funqy-http'
 
+    //Knative - Deploy na Knative, ferramenta para gerenciamento de aplicações Serverless no Kubernetes
+    implementation 'io.quarkus:quarkus-funqy-knative-events'
+
     // JDBC driver dependencies
     implementation("io.quarkus:quarkus-jdbc-mysql")
+    implementation("io.quarkus:quarkus-jdbc-h2")
+
 
     // Hibernate ORM specific dependencies
     implementation("io.quarkus:quarkus-hibernate-orm-panache")

@@ -1,0 +1,7 @@
+quarkus:
+  datasource:
+    db-kind: mysql
+    username: wb-usuarios
+    password: quarkusdb
+    jdbc:
+      url: ${DATABASE_HOST}

@@ -1,16 +1,12 @@
 quarkus:
   http:
-    port: 5000
-
+    port: 5001
+  devservices:
+    enabled: false
   datasource:
-    db-kind: mysql
-    username: wb-usuarios
-    password: quarkusdb
+    db-kind: h2
     jdbc:
-      url: "jdbc:mysql://127.0.0.1:3303/db_quarkus"
-    devservices:
-      enabled: false
-
+      url: jdbc:h2:tcp://localhost/mem:test
   hibernate-orm:
     database:
       generation: update
