@@ -1,6 +1,6 @@
 quarkus:
   http:
-    port: 5001
+    port: 5000
   devservices:
     enabled: false
   datasource:
